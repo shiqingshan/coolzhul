@@ -18,8 +18,6 @@ public class UserController {
     public BusinessResponse<User> getUser(){
         User user = new User();
         user.setUserId("321");
-        log.info("用户id[{}]",user.getUserId());
-        log.error("用户id error[{}]",user.getUserId());
         return BusinessResponseUtil.success("成功",user);
     }
 }
