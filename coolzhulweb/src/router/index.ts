@@ -22,6 +22,24 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "About" */ '../components/About.vue'),
   },
   {
+    path: '/login',
+    name: 'Login',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "About" */ '../components/login/Login.vue'),
+  },
+  {
+    path: '/html5',
+    name: 'Html5',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "About" */ '../components/htmlcss/Html5.vue'),
+  },
+  {
     path: '/:currentPath(.*)*', // 路由未匹配到，进入这个
     redirect: (_) => {
       return { path: '/404' }
