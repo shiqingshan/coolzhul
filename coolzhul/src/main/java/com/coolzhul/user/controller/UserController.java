@@ -2,7 +2,7 @@ package com.coolzhul.user.controller;
 
 import com.coolzhul.common.base.BusinessResponse;
 import com.coolzhul.common.util.BusinessResponseUtil;
-import com.coolzhul.user.model.User;
+import com.coolzhul.common.model.user.User;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;

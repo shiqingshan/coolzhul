@@ -1,6 +1,13 @@
-package com.coolzhul.user.model;
+package com.coolzhul.common.model.user;
+
+import com.coolzhul.common.util.TgSet;
+import com.coolzhul.common.util.TgSets;
 
 public class User {
+    @TgSets({
+            @TgSet(begin = 1, end = 1,sort = 1),
+            @TgSet(begin = 1, end = 1,sort = 1)
+    })
     private String userId;
     private String userName;
     private int age;
